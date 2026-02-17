@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="message.css">
+<script src="index.js" defer></script>
+</head>
+
+<body>
+
+<main class="content" id="content">
+
+
+
+  <form class="form card" name="contact-form" id="contact-form" novalidate>
+  <h1>Contact Us</h1>
+
+ <div class="first-n field-labels">
+<label class="general-text block">First name <span>*</span>
+</label>
+    <input type="text" class="first-name border" name="first-name" id="first-name" data-type="text">
+       <p class="error-text error"></p>
+  </div>
+
+<div class="last-n field-labels">
+<label class="general-text block ">last name <span>*</span>
+</label>
+    <input type="text" class="last-name border" name="last-name" id="last-name" data-type="text">
+       <p class="error-text error"></p>
+  </div>
+
+<div class="email-container field-labels">
+
+  <label class="general-text block">Email Address <span>*</span>
+</label>
+<input type="email" class="email border" id="email" placeholder="company@email.com" data-type="email" name="email">
+   <p class="error-text error"></p>
+</div>
+
+<div class="query">
+
+
+  <p class="general-text query-type-label">
+  Query Type <span>*</span>
+</p>
+
+<label class="radio-field border " for="general-enquiry">
+<input type="radio" name="query-type" class="enquiry general-text" data-type="radio" id="general-enquiry" value="general-enquiry">
+<p class="general-text radio-label">
+  General Enquiry
+</p>
+</label>
+<label class="radio-field border" for="support-request">
+  <input type="radio" name="query-type" data-type="radio" class="enquiry" id="support-request" value="support-request">
+<p class="general-text radio-label">
+   Support Request
+</p>
+</label>
+
+  <p class="error-text error query-error"></p>
+</div>
+
+<div class="message field-labels">
+
+  <label for="message" class="general-text block message-label">
+    Message <span>*</span>
+  </label>
+<textarea name="t-area" id="t-area" class="t-area" data-type="message"></textarea>
+   <p class="error-text error"></p>
+</div>
+
+<div class="content">
+  <div class="consent-container">
+<input type="checkbox" name="checkbox" id="checkbox" class="checkbox" data-type="checkbox">
+<label class="consent" for="checkbox">
+  I consent to being contacted by the team <span>*</span>
+</label>
+</div>
+ <p class="error-text error  "></p>
+</div>
+
+<button type="submit">Submit</button>
+
+  </form>
+
+<div class="alert"  id="alert">
+<div class="success-flex"><img src="assets/images/icon-success-check.svg" alt="Success Icon" class="success-icon">
+    <h3 class="success-title">Message Sent!</h3></div>
+    
+    <p class="success-message">Thanks for completing the form. We’ll be in touch soon!</p>
+
+</div>
+
+</main>
+
+</body>
+</html>
