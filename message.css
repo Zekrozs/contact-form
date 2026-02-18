@@ -32,7 +32,6 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-height: auto;
 width: 100vw;
 padding-block: 2rem;
 min-height: 100vh;
@@ -40,12 +39,7 @@ font-family: 'Karla', sans-serif;}
 
 
 
-.consent-container{display: flex;
-    flex-direction: row;
-justify-content: baseline;
-align-items: center;
-gap: 1.2rem;
-}
+
 
 /* form */
 
@@ -53,6 +47,8 @@ h1{color: var(--grey-900);
     font-size: 2.5rem;
     margin-block-end: 0.5rem;}
 
+
+/* radio buttons style */
 
 .query{display: flex;
 flex-direction: column;
@@ -62,8 +58,6 @@ gap: 0.5rem;}
     flex-direction: row;
 border: 1px solid;
 }
-
-
 
 .radio-field,.enquiry{cursor: pointer;}
 
@@ -99,6 +93,8 @@ align-items: center;}
 
 
 
+/* text area */
+
 textarea{ 
     resize: none;
     width: 100%;
@@ -111,6 +107,15 @@ textarea{
 }
 
 textarea:hover{border-color: var(--green-600);}
+
+.consent-container{display: flex;
+    flex-direction: row;
+justify-content: baseline;
+align-items: center;
+gap: 1.2rem;
+}
+
+
 
 /* removing the original checkbox and styling a new one to 
 change the border color */
@@ -152,6 +157,8 @@ display: grid;
 
 
 
+
+/* button */
 button{padding-block: 1.2rem;
 border:none;
 background-color: var(--green-600);
@@ -165,6 +172,8 @@ transition: 400ms ease-in-out;}
 button:hover{background-color: hsl(168, 80%, 18%);
 } 
 
+
+/* sucess alert */
 .success-flex{display: flex;
 flex-direction: row;
 align-items: center;
@@ -237,7 +246,11 @@ textarea:focus {
     border: 1.4px solid var(--green-600);
 }
 
+.hidden{display: none;}
 
+.active{
+    border: 1.33px solid var(--red);
+}
 
 
 
@@ -259,19 +272,20 @@ align-items: center;
 span{color:var(--green-600);
 font-size: 0.8rem;}
 
+/* ;abels become bolder when typing */
+
 .field-labels:has(input:focus) .general-text{color: var(--grey-900); font-weight: 600;}
 .message:has(textarea:focus) .general-text{color: var(--grey-900); font-weight: 600;}
 
+
+/* error text */
 .error-text{color: var(--red);
 font-size: 1rem;
 padding-block-start: 0.6rem;
 }
 
-.hidden{display: none;}
 
-.active{
-    border: 1.33px solid var(--red);
-}
+
 
 /* media tablet */
 
