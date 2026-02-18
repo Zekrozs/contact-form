@@ -114,8 +114,8 @@ setTimeout(() => {
   document.getElementById('alert').classList.remove('visible');
 }, 3580); 
 setTimeout(() => {
-    location.reload(); 
-}, 4000); 
+    form.reset(); 
+}, 1); 
   }
 
 
@@ -152,4 +152,5 @@ form.addEventListener('submit', handleValidation);
 // </label>
 
 //   <p class="error-text error"></p>
+
 // </div>
